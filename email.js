@@ -14,8 +14,6 @@ app.get('/send-email', function(req, res) {
           pass: process.env.PASSWORD
       }
   });
-  console.log(process.env.EMAIL);
-  console.log(process.env.PASSWORD);
   const mailOptions = {
     from: 'gjethwani1@gmail.com', // sender address
     to: 'gjethwani1@gmail.com', // list of receivers
