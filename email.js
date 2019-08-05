@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 var nodemailer = require('nodemailer');
+
+app.use(cors());
 
 app.get('/send-email', function(req, res) {
   let name = req.query.name;
