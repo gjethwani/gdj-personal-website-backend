@@ -4,8 +4,10 @@
   "description": "",
   "main": "email.js",
   "dependencies": {
-    "@sendgrid/mail": "^6.2.1",
+    "@sendgrid/client": "^6.4.0",
+    "@sendgrid/mail": "^6.4.0",
     "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
     "express": "^4.16.3",
     "gmail-send": "^1.2.14",
     "sendgrid": "^5.2.3"
