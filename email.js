@@ -75,7 +75,7 @@ app.get('/send-email', function(req, res) {
     },
     content: [{
       type: 'text/html',
-      value: 'hello'
+      value: `<h3>Name: ${name}</h3><h3>Number: ${number}</h3><h3>Email: ${email}</h3><h3>Message:</h3><p>${message}</p>`
     }]
   }).then(() => {
     return res.send('Email has been sent!');
